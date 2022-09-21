@@ -1,9 +1,11 @@
 import './App.css';
+import Todo from './components/Todo';
 
 function App() {
   return (
     <div className="container display-4">
-      ToDO
+      <h1>My Todos</h1>
+      <Todo text="Learn React" />
     </div>
   );
 }
