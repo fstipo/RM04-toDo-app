@@ -3,9 +3,11 @@ React
 Bootstrap
 
 
-## Available Scripts
+## Used components
+Modal
+Backdrop
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
