@@ -1,5 +1,6 @@
 # Todo App
-
+React
+Bootstrap
 
 
 ## Available Scripts
