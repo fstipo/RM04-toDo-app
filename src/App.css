@@ -1,0 +1,33 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+
+body {
+  position: relative;
+}
+i {
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
+}
+
+i:hover {
+  font-size: xx-large !important;
+}
+
+.my-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 100;
+}
+
+.my-backdrop {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 90;
+}

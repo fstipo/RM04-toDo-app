@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './Modal';
+import Backdrop from './Backdrop';
+
+
 
 const Todo = (props) => {
+    const [showModal, setShowModal] = useState();
+
+    const onShowModalHandler = () => {
+        setShowModal(true);
+    }
+
+    const onCloseModalHandler = () => {
+        setShowModal(false)
+    }
     return (
-        <div className='card'>
-            <h2>{props.text}</h2>
-            <div className='actions'>
-                <button className='btn btn-secondary'>Delete</button>
+        <div>
+            {showModal && <Modal text="Are you sure?" onClick={onCloseModalHandler} />}
+            {showModal && <Backdrop onClick={onCloseModalHandler} />}
+            <div className='card p-3'>
+                <h2 className='display-4'>{props.text}</h2>
+                <div className='actions pt-3'>
+                    <button className='btn btn-danger' onClick={onShowModalHandler}>Delete</button>
+                </div>
             </div>
         </div>
     )

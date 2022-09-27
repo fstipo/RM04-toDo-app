@@ -1,12 +1,14 @@
 import './App.css';
+import MainContainer from './components/MainContainer';
+import Header from './components/Header';
 import Todo from './components/Todo';
 
 function App() {
   return (
-    <div className="container display-4">
-      <h1>My Todos</h1>
+    <MainContainer>
+      <Header text="My todos" />
       <Todo text="Learn React" />
-    </div>
+    </MainContainer>
   );
 }
 
