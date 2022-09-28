@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# Todo App
+React
+Bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Used components
+Modal
+Backdrop
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
